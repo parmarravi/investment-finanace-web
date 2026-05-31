@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XYZ About Us — Long-term thinking in finance and ventures</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function() {
+      const currentTheme = localStorage.getItem("theme");
+      if (currentTheme) {
+        document.documentElement.setAttribute("data-theme", currentTheme);
+      } else {
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute("data-theme", prefersDark ? "dark" : "light");
+      }
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="header">
+    <div class="container">
+      <div class="navbar">
+        <a href="index.html" class="logo"> XYZ </a>
+
+        <nav class="nav-links" id="navMenu">
+          <a href="ventures.html">Ventures</a>
+          <a href="learnings.html">Learnings</a>
+          <a href="about.html" class="active">About Us</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark/Light Mode">
+            <span class="material-symbols-outlined theme-toggle-icon">dark_mode</span>
+          </button>
+
+          <button class="btn-primary">Connect With Us &rarr;</button>
+
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">☰</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- ================= HERO ================= -->
+
+    <section class="hero bg-animated-gradient">
+      <div class="container">
+        <div class="hero-ventures">
+          <div class="hero-content">
+            <span class="eyebrow"> ABOUT US </span>
+
+            <h1>
+              Building with
+              <br />
+              <span class="highlight italic">long-term thinking.</span>
+            </h1>
+
+            <p>
+              We partner with founders and professionals to create real opportunities, build vibrant skills, and drive
+              meaningful outcomes over the long run.
+            </p>
+
+            <!-- Key Indicators Row -->
+            <div class="hero-info-row"
+              style="margin-top: 40px; border-top: 1px solid var(--border); padding-top: 32px;">
+              <div class="hero-info-item">
+                <div class="hero-info-icon"
+                  style="background: var(--primary-light); border-color: var(--primary-light); color: var(--primary);">
+                  <span class="material-symbols-outlined"
+                    style="font-variation-settings: 'FILL' 1;">all_inclusive</span>
+                </div>
+                <div class="hero-info-text">
+                  <span class="hero-info-label"
+                    style="font-size: 13px; font-weight: 700; color: var(--primary);">Long-Term</span>
+                  <span class="hero-info-val" style="font-size: 10px;">Mindset</span>
+                </div>
+              </div>
+
+              <div class="hero-info-item">
+                <div class="hero-info-icon"
+                  style="background: var(--primary-light); border-color: var(--primary-light); color: var(--primary);">
+                  <span class="material-symbols-outlined">psychology</span>
+                </div>
+                <div class="hero-info-text">
+                  <span class="hero-info-label"
+                    style="font-size: 13px; font-weight: 700; color: var(--primary);">Practical</span>
+                  <span class="hero-info-val" style="font-size: 10px;">Experience</span>
+                </div>
+              </div>
+
+              <div class="hero-info-item">
+                <div class="hero-info-icon"
+                  style="background: var(--primary-light); border-color: var(--primary-light); color: var(--primary);">
+                  <span class="material-symbols-outlined">handshake</span>
+                </div>
+                <div class="hero-info-text">
+                  <span class="hero-info-label"
+                    style="font-size: 13px; font-weight: 700; color: var(--primary);">Thoughtful</span>
+                  <span class="hero-info-val" style="font-size: 10px;">Partnerships</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-image-wrapper">
+            <div class="hero-image-inner" style="position: relative;">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3T9fbYop2IjT-bW0JgAf_A-vcGs1Isz6HFNymZsQKZBzQuduhWanGg3F-v9AtNLHZj-l7zeMydWIN5zPYJmNOPfDQGVoK8qmZWO950eaCMkYoeiBXwcHDzacGj9bzKM9qBdwcldCRJMFkiudRa9wGBR4Rb6gHIo0A8XYKRwaUB_YJ0jOcn32gtcpxUt-puvi51D5sp4zxFZWoyeF1Kmzua5HVd4_kXKXe8YW6LtAQFUyjdrNtQ69m2nDdUsRGGZmE36YEDPESUq8h"
+                alt="Sophisticated corporate office skyline view" style="filter: grayscale(1);" />
+              <div class="hero-quote-card">
+                <p
+                  style="font-family: 'Playfair Display', serif; font-size: 15.5px; font-weight: 600; font-style: italic; line-height: 1.5; color: var(--text); margin: 0;">
+                  "We believe the best ventures are built on clarity, conviction, and consistency."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PHILOSOPHY ================= -->
+
+    <section class="philosophy-section"
+      style="padding: 100px 0; background: var(--white); border-bottom: 1px solid var(--border);">
+      <div class="container">
+        <div class="section-header-left">
+          <span class="eyebrow"> OUR PHILOSOPHY </span>
+          <h2>Ideas need three things to grow:</h2>
+        </div>
+
+        <div class="about-philosophy-grid">
+          <div class="about-philosophy-card">
+            <span class="material-symbols-outlined philosophy-icon">target</span>
+            <h3>Clarity</h3>
+            <p>We focus on what matters and build with intent and discipline. We cut through noise to find the
+              fundamental value in every enterprise.</p>
+          </div>
+
+          <div class="about-philosophy-card">
+            <span class="material-symbols-outlined philosophy-icon">mountain_flag</span>
+            <h3>Conviction</h3>
+            <p>We pursue ideas and goals we truly believe in. Once committed, we provide the unwavering support
+              necessary to see a vision through to fruition.</p>
+          </div>
+
+          <div class="about-philosophy-card">
+            <span class="material-symbols-outlined philosophy-icon">sync</span>
+            <h3>Consistency</h3>
+            <p>We show up over the long term and compete with patience. Excellence is not an act, but a habit formed
+              through relentless daily execution.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHAT WE DO ================= -->
+
+    <section class="do-section" style="background: var(--background); border-bottom: 1px solid var(--border);">
+      <div class="container">
+        <div class="about-do-grid">
+          <div class="about-do-left">
+            <span class="eyebrow"> WHAT WE DO </span>
+            <h2
+              style="font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 700; color: var(--text); margin-top: 8px; margin-bottom: 24px;">
+              An ecosystem that connects ideas, experience, and growth.
+            </h2>
+            <p style="color: var(--body); font-size: 17px; line-height: 1.6; margin-bottom: 32px;">
+              Our two verticals work together to create a stronger platform for entrepreneurs, professionals, and
+              lifelong learners.
+            </p>
+
+            <div class="about-do-cards">
+              <div class="about-do-card">
+                <div class="card-icon-wrapper">
+                  <span class="material-symbols-outlined">rocket_launch</span>
+                </div>
+                <div>
+                  <h4>Ventures</h4>
+                  <p>Collaborating with ambitious founders at the earliest stages, providing capital, strategic
+                    perspectives, and network access.</p>
+                  <a href="ventures.html" class="explore-link">Explore Ventures <span
+                      class="material-symbols-outlined">arrow_forward</span></a>
+                </div>
+              </div>
+
+              <div class="about-do-card">
+                <div class="card-icon-wrapper">
+                  <span class="material-symbols-outlined">school</span>
+                </div>
+                <div>
+                  <h4>Learnings</h4>
+                  <p>Designing practical learning journeys led by industry practitioners to build real-world skills for
+                    careers in finance and beyond.</p>
+                  <a href="learnings.html" class="explore-link">Explore Learnings <span
+                      class="material-symbols-outlined">arrow_forward</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-images-showcase">
+            <div class="about-image-col offset-top">
+              <div class="about-showcase-img">
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXN0-A2iJ8EDo_xeZ82VM4g-hIig_ZtMz-Tp3A1I1sK2lxGPzadmh_iRuUKS_cL0n3UGQuvzgp0BnFAYFP9alJm3IK6JQAuFcUOg779OPDGesHWbwQ3F5uQJv2hQ06MkoliUHOQPYwdQo9no2KQvgFB-w15B3LFzsKjrBxJEXUMueb-peiGkjc1YbxuHOGPCLS-_qSICEYe1tS4gixwEHNF5LRPPhZvCLswBRdEQ7BdysD19uTiotH0XzYcKc-1XhKg-Wmu2fSms20"
+                  alt="Strategic corporate board meeting" />
+              </div>
+              <div class="about-stat-badge primary-fill">
+                <h3>250+</h3>
+                <p>Founders Mentored</p>
+              </div>
+            </div>
+
+            <div class="about-image-col">
+              <div class="about-stat-badge surface-fill">
+                <h3>15k+</h3>
+                <p>Professionals Trained</p>
+              </div>
+              <div class="about-showcase-img">
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbUpcfHu3RgVv1w1zSi4j_7KFnSzLXhe0U_OKyttAXxjmoVl9Ezbxm_O8XoRzr3eKlGi5cisFb4DfaRGC_f3Ga-GsLshuzoHRq5gIav6blJAsSNAlOjdSfJng-iIZQSwmrCJiphRi6pNZEVwjnH_BQAtllMfsHhDkg7TlFQM1LU0Liv8dn80ESvpc_zQg_pZffcTwOkxmFtvlwqFpE8uNi5-sSyZ2l8lOcDQpvRit0cUlU9dDyRXq-caVcz-AcITFIHWb3ESUXy2Jo"
+                  alt="Financial analysts collaborating" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OUR APPROACH ================= -->
+
+    <section class="approach-section"
+      style="padding: 100px 0; background: var(--white); border-bottom: 1px solid var(--border);">
+      <div class="container">
+        <div class="section-header-centered">
+          <span class="eyebrow"> OUR APPROACH </span>
+          <h2>Focused on what creates real impact.</h2>
+        </div>
+
+        <div class="about-approach-grid">
+          <div class="about-approach-card">
+            <span class="material-symbols-outlined approach-icon">settings_input_component</span>
+            <h4>Tailored Solutions</h4>
+            <p>Programs and engagements customized to unique goals and contexts. No one-size-fits-all strategies here.
+            </p>
+          </div>
+
+          <div class="about-approach-card">
+            <span class="material-symbols-outlined approach-icon">hub</span>
+            <h4>Experienced Network</h4>
+            <p>Access to a trusted network of practitioners, operators, and advisors with decades of combined
+              experience.</p>
+          </div>
+
+          <div class="about-approach-card">
+            <span class="material-symbols-outlined approach-icon">verified</span>
+            <h4>Real-World Relevance</h4>
+            <p>Content and support designed around real challenges and outcomes, ensuring immediate utility for all
+              partners.</p>
+          </div>
+
+          <div class="about-approach-card">
+            <span class="material-symbols-outlined approach-icon">link</span>
+            <h4>Long-Term Relationships</h4>
+            <p>We grow together with the people and organizations we work with, fostering deep trust and shared success.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta-section" id="contact">
+      <div class="container">
+        <div class="cta-banner-dark">
+          <div class="cta-content-left">
+            <h2>
+              Founders building the future.
+              <br />
+              Professionals shaping their careers.
+            </h2>
+            <p>Let's build, learn, and grow together toward a more resilient financial future.</p>
+          </div>
+
+          <div class="cta-content-right">
+            <button class="btn-primary">Connect With Us &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">XYZ</div>
+
+        <div class="footer-links">
+          <a href="ventures.html">Ventures</a>
+          <a href="learnings.html">Learnings</a>
+          <a href="about.html" class="active">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn">
+            <svg class="social-svg-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="X">
+            <svg class="social-svg-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="Email">
+            <svg class="social-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">&copy; 2024 XYZ. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

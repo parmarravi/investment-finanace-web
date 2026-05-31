@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XYZ Contact Us — Start a conversation with our teams</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function() {
+      const currentTheme = localStorage.getItem("theme");
+      if (currentTheme) {
+        document.documentElement.setAttribute("data-theme", currentTheme);
+      } else {
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute("data-theme", prefersDark ? "dark" : "light");
+      }
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="header">
+    <div class="container">
+      <div class="navbar">
+        <a href="index.html" class="logo"> XYZ </a>
+
+        <nav class="nav-links" id="navMenu">
+          <a href="ventures.html">Ventures</a>
+          <a href="learnings.html">Learnings</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark/Light Mode">
+            <span class="material-symbols-outlined theme-toggle-icon">dark_mode</span>
+          </button>
+
+          <button class="btn-primary">Connect With Us &rarr;</button>
+
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">☰</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- ================= HERO ================= -->
+
+    <section class="hero bg-animated-gradient">
+      <div class="container">
+        <div class="hero-ventures">
+          <div class="hero-content">
+            <span class="eyebrow"> CONTACT </span>
+
+            <h1>Let’s start a conversation.</h1>
+
+            <p>
+              Whether you are a founder exploring opportunities or a professional interested in our learning programs, we would be glad to connect.
+            </p>
+
+            <!-- Contact quick info channels -->
+            <div class="flex-wrap-gap">
+              <div class="contact-info-item">
+                <span class="contact-info-label">Email</span>
+                <a href="mailto:hello@xyz.com" class="contact-info-value contact-info-link">hello@xyz.com</a>
+              </div>
+              <div class="contact-info-item">
+                <span class="contact-info-label">Based In</span>
+                <span class="contact-info-value">Mumbai, India</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-image-wrapper">
+            <div class="hero-image-inner">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1XdGg1vHPXohgEnchO4OPtGMxWMalUnZRBcy1ed3l-wwBr_bvgVKbww2HDYKQhr7gdVIYwNy9EEpoBzJSNtCE9IHmIL4IgQfXmWIF8sLQTSFIYEjNXQeWykDEts2z4rBfOgKeouZ3OV2c_Rd942fAdaEoPUQ4KWl39csvjqJkiMY_SQt3vTRrB32HY-7hmmC4I6aKIXJVxBfpfZ_FnWKhFp2wef3pVpnkGYDb5aZC846aO1c4rjftMiEc5LLwO_iecyxdFQNErTpr" alt="Sophisticated metropolitan office interior with light exposure" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INQUIRY & LOCATIONS ================= -->
+
+    <section class="locations-section" style="padding: 100px 0; background: var(--white); border-bottom: 1px solid var(--border);">
+      <div class="container">
+        <div class="contact-locations-grid">
+          <!-- Left Form Box -->
+          <div class="contact-form-box">
+            <h2>Send us a message</h2>
+            <form class="lead-form" onsubmit="event.preventDefault(); alert('Thank you! Your inquiry has been successfully sent.');">
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; margin-bottom: 24px;">
+                <div class="form-group" style="display: flex; flex-direction: column; gap: 8px;">
+                  <label style="font-size: 13px; font-weight: 700; color: var(--text);">Name</label>
+                  <input type="text" placeholder="Your full name" required class="form-input" />
+                </div>
+                <div class="form-group" style="display: flex; flex-direction: column; gap: 8px;">
+                  <label style="font-size: 13px; font-weight: 700; color: var(--text);">Email</label>
+                  <input type="email" placeholder="email@company.com" required class="form-input" />
+                </div>
+              </div>
+
+              <div class="form-group" style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px;">
+                <label style="font-size: 13px; font-weight: 700; color: var(--text);">Subject</label>
+                <div class="select-wrapper">
+                  <select class="form-select" required>
+                    <option value="" disabled selected>Select a category</option>
+                    <option value="ventures">Venture Partnership</option>
+                    <option value="learnings">Learning Programs</option>
+                    <option value="institutional">Institutional Inquiry</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group" style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 32px;">
+                <label style="font-size: 13px; font-weight: 700; color: var(--text);">Message</label>
+                <textarea placeholder="How can we help you?" rows="5" required class="form-textarea"></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; height: 50px;">
+                Submit Inquiry &rarr;
+              </button>
+            </form>
+          </div>
+
+          <!-- Right Locations Column -->
+          <div class="contact-hubs">
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; color: var(--text); margin-bottom: 40px; margin-top: 0; text-align: left;">Our Global Hubs</h2>
+
+            <div class="hub-cards-list">
+              <div class="hub-card">
+                <div class="hub-icon-wrapper">
+                  <span class="material-symbols-outlined">location_on</span>
+                </div>
+                <div class="hub-card-info">
+                  <h3>Mumbai HQ</h3>
+                  <p>
+                    One World Centre, Tower 2B,
+                    <br />
+                    Lower Parel, Mumbai, Maharashtra 400013
+                  </p>
+                  <a href="#" class="map-link">View on Map <span class="material-symbols-outlined">open_in_new</span></a>
+                </div>
+              </div>
+
+              <div class="hub-card">
+                <div class="hub-icon-wrapper">
+                  <span class="material-symbols-outlined">apartment</span>
+                </div>
+                <div class="hub-card-info">
+                  <h3>Bangalore Tech Hub</h3>
+                  <p>
+                    Prestige Trade Tower, Level 14,
+                    <br />
+                    Palace Rd, High Grounds, Bangalore 560001
+                  </p>
+                  <a href="#" class="map-link">View on Map <span class="material-symbols-outlined">open_in_new</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ SECTION ================= -->
+
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header-centered">
+          <h2>Frequently Asked Questions</h2>
+          <p style="color: var(--body); font-size: 15px; margin-top: 8px;">Common institutional inquiries regarding our venture and learning ecosystems.</p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-accordion" open>
+            <summary>
+              <span>How do I pitch my venture for investment?</span>
+              <span class="material-symbols-outlined expand-icon">expand_more</span>
+            </summary>
+            <div class="faq-content">
+              Founders can submit their pitch decks through our Venture portal or directly via the contact form above. We typically review submissions within 10 business days and prioritize early-stage fintech and edtech solutions.
+            </div>
+          </details>
+
+          <details class="faq-accordion">
+            <summary>
+              <span>What professional certifications do you offer?</span>
+              <span class="material-symbols-outlined expand-icon">expand_more</span>
+            </summary>
+            <div class="faq-content">
+              Our flagship programs cover Investment Banking, Private Equity, and FinTech Strategy. Each program is led by industry practitioners and provides institutional-grade credentials recognized by leading financial firms.
+            </div>
+          </details>
+
+          <details class="faq-accordion">
+            <summary>
+              <span>Do you offer corporate training partnerships?</span>
+              <span class="material-symbols-outlined expand-icon">expand_more</span>
+            </summary>
+            <div class="faq-content">
+              Yes, we collaborate with financial institutions to provide bespoke training modules for graduate cohorts and senior leadership. Contact our institutional inquiry desk for a tailored proposal.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta-section" id="call-cta">
+      <div class="container">
+        <div class="cta-banner-dark">
+          <div class="cta-content-left">
+            <h2>Building relationships through ideas, learning, and collaboration.</h2>
+            <p>Let's connect and explore meaningful opportunities together.</p>
+          </div>
+
+          <div class="cta-content-right">
+            <button class="btn-primary">Schedule a Call &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">XYZ</div>
+
+        <div class="footer-links">
+          <a href="ventures.html">Ventures</a>
+          <a href="learnings.html">Learnings</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html" class="active">Contact</a>
+        </div>
+
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn">
+            <svg class="social-svg-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="X">
+            <svg class="social-svg-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="Email">
+            <svg class="social-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">&copy; 2024 XYZ. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

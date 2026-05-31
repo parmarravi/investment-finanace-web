@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XYZ Learnings — Practitioner-led financial tracks</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function() {
+      const currentTheme = localStorage.getItem("theme");
+      if (currentTheme) {
+        document.documentElement.setAttribute("data-theme", currentTheme);
+      } else {
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute("data-theme", prefersDark ? "dark" : "light");
+      }
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="header">
+    <div class="container">
+      <div class="navbar">
+        <a href="index.html" class="logo"> XYZ </a>
+
+        <nav class="nav-links" id="navMenu">
+          <a href="ventures.html">Ventures</a>
+          <a href="learnings.html" class="active">Learnings</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark/Light Mode">
+            <span class="material-symbols-outlined theme-toggle-icon">dark_mode</span>
+          </button>
+
+          <button class="btn-primary">Connect With Us &rarr;</button>
+
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">☰</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-ventures">
+          <div class="hero-content">
+            <span class="eyebrow"> INTERACTIVE ACADEMY </span>
+
+            <h1>
+              Master your
+              <br />
+              <span class="highlight">financial track.</span>
+            </h1>
+
+            <p>
+              A practitioner-led environment designed to accelerate your transition into specialized financial
+              domains through intensive, workflow-driven modules.
+            </p>
+
+            <!-- Quick Stats Row -->
+            <div class="hero-info-row"
+              style="margin-top: 40px; border-top: 1px solid var(--border); padding-top: 32px;">
+              <div class="hero-info-item">
+                <div class="hero-info-icon"
+                  style="background: var(--primary-light); border-color: var(--primary-light); color: var(--primary);">
+                  <span class="material-symbols-outlined">school</span>
+                </div>
+                <div class="hero-info-text">
+                  <span class="hero-info-label"
+                    style="font-size: 15px; font-weight: 700; color: var(--primary);">Structured</span>
+                  <span class="hero-info-val" style="font-size: 11px;">Curriculums</span>
+                </div>
+              </div>
+
+              <div class="hero-info-item">
+                <div class="hero-info-icon"
+                  style="background: var(--primary-light); border-color: var(--primary-light); color: var(--primary);">
+                  <span class="material-symbols-outlined">ads_click</span>
+                </div>
+                <div class="hero-info-text">
+                  <span class="hero-info-label"
+                    style="font-size: 15px; font-weight: 700; color: var(--primary);">Focused</span>
+                  <span class="hero-info-val" style="font-size: 11px;">Career Impact</span>
+                </div>
+              </div>
+
+              <div class="hero-info-item">
+                <div class="hero-info-icon"
+                  style="background: var(--primary-light); border-color: var(--primary-light); color: var(--primary);">
+                  <span class="material-symbols-outlined">bolt</span>
+                </div>
+                <div class="hero-info-text">
+                  <span class="hero-info-label"
+                    style="font-size: 15px; font-weight: 700; color: var(--primary);">Fast</span>
+                  <span class="hero-info-val" style="font-size: 11px;">Path Navigation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-image-wrapper">
+            <div class="hero-image-inner">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh3FLB0ATb811PwqR9NdtKjqOiIHUJJkn5Xn0FibBIkVG_p6U2XVRnufzV10vQUjfL87ywJl5KN6MpMU6luqnUz6wVZdk3qEcIaejHPBisKZYB3qRC1zi0F1NdxdORZ9z_fGbafO_2wpfw9brg0teIukVRzVDl3-GWCqoULvDfMS1CwjYNcWMtMy63NERh0nxzBMedsXtgFsEYuiSdw0lJqvBRWCQ_SPMXT8W1Rr-oUR_zoEBRqutCEVFzThTATqQxoMjeTP8j4vvq"
+                alt="Sophisticated modern corporate office" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRACTITIONER TRACKS ================= -->
+
+    <section class="academy-tracks-section" id="academy-tracks">
+      <div class="container">
+        <div class="section-header-left">
+          <span class="eyebrow"> PROGRAM NAVIGATOR </span>
+          <h2>The Practitioner Tracks</h2>
+        </div>
+
+        <div class="academy-tracks-grid">
+          <!-- Sidebar Tabs Navigation -->
+          <div class="track-tabs-list">
+            <button aria-selected="true" class="track-tab" id="btn-equity" onclick="switchTrack('equity')">
+              <div class="track-tab-info">
+                <span class="material-symbols-outlined tab-icon">analytics</span>
+                <div class="track-tab-text">
+                  <h3>Equity Research</h3>
+                  <p>Company &amp; Sector Valuation</p>
+                </div>
+              </div>
+              <span class="material-symbols-outlined chevron-icon">chevron_right</span>
+            </button>
+
+            <button aria-selected="false" class="track-tab" id="btn-credit" onclick="switchTrack('credit')">
+              <div class="track-tab-info">
+                <span class="material-symbols-outlined tab-icon">account_balance_wallet</span>
+                <div class="track-tab-text">
+                  <h3>Credit Research</h3>
+                  <p>Fixed Income &amp; Debt Analysis</p>
+                </div>
+              </div>
+              <span class="material-symbols-outlined chevron-icon">chevron_right</span>
+            </button>
+
+            <button aria-selected="false" class="track-tab" id="btn-banking" onclick="switchTrack('banking')">
+              <div class="track-tab-info">
+                <span class="material-symbols-outlined tab-icon">monitoring</span>
+                <div class="track-tab-text">
+                  <h3>Investment Banking</h3>
+                  <p>M&amp;A and Deal Execution</p>
+                </div>
+              </div>
+              <span class="material-symbols-outlined chevron-icon">chevron_right</span>
+            </button>
+
+            <button aria-selected="false" class="track-tab" id="btn-pe" onclick="switchTrack('pe')">
+              <div class="track-tab-info">
+                <span class="material-symbols-outlined tab-icon">payments</span>
+                <div class="track-tab-text">
+                  <h3>Private Equity</h3>
+                  <p>LBO &amp; Fund Management</p>
+                </div>
+              </div>
+              <span class="material-symbols-outlined chevron-icon">chevron_right</span>
+            </button>
+
+            <button aria-selected="false" class="track-tab" id="btn-mentorship" onclick="switchTrack('mentorship')">
+              <div class="track-tab-info">
+                <span class="material-symbols-outlined tab-icon">diversity_3</span>
+                <div class="track-tab-text">
+                  <h3>Mentorship Program</h3>
+                  <p>1-on-1 Career &amp; Prep Guidance</p>
+                </div>
+              </div>
+              <span class="material-symbols-outlined chevron-icon">chevron_right</span>
+            </button>
+          </div>
+
+          <!-- Content Card Area -->
+          <div class="track-content-card">
+            <div id="track-content">
+              <!-- Default: Equity Research Content -->
+              <div class="track-pane" id="equity-content">
+                <div class="track-pane-header">
+                  <span class="track-badge">Flagship Path</span>
+                  <span style="color: var(--border);">|</span>
+                  <span class="track-duration">12 Week Intensity</span>
+                </div>
+                <h3>Equity Research Workflow</h3>
+
+                <div class="track-pane-split">
+                  <div class="track-highlights">
+                    <h4>CURRICULUM HIGHLIGHTS</h4>
+                    <ul class="track-highlights-list">
+                      <li>
+                        <span class="material-symbols-outlined check-icon">check_circle</span>
+                        <span>Advanced DCF and Relative Valuation modeling using live ticker data.</span>
+                      </li>
+                      <li>
+                        <span class="material-symbols-outlined check-icon">check_circle</span>
+                        <span>Buy-side versus Sell-side research report drafting frameworks.</span>
+                      </li>
+                      <li>
+                        <span class="material-symbols-outlined check-icon">check_circle</span>
+                        <span>Quarterly earnings call analysis and forensic accounting checks.</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="track-career">
+                    <h4>CAREER IMPACT</h4>
+                    <div class="track-career-box">
+                      <p class="track-quote">"Equips candidates for roles at global brokerage houses and boutique
+                        research firms."</p>
+                      <div class="track-tags">
+                        <span class="track-tag">Research Analyst</span>
+                        <span class="track-tag">Portfolio Management</span>
+                        <span class="track-tag">Investor Relations</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Credit Research Content -->
+              <div class="track-pane hidden" id="credit-content">
+                <div class="track-pane-header">
+                  <span class="track-badge">Specialized Path</span>
+                  <span style="color: var(--border);">|</span>
+                  <span class="track-duration">10 Week Program</span>
+                </div>
+                <h3>Credit &amp; Fixed Income</h3>
+
+                <div class="track-pane-split">
+                  <div class="track-highlights">
+                    <h4>CURRICULUM HIGHLIGHTS</h4>
+                    <ul class="track-highlights-list">
+                      <li>
+                        <span class="material-symbols-outlined check-icon">check_circle</span>
+                        <span>Covenant analysis and legal debt structure evaluation.</span>
+                      </li>
+                      <li>
+                        <span class="material-symbols-outlined check-icon">check_circle</span>
+                        <span>Default probability modeling and credit rating simulations.</span>
+                      </li>
+                      <li>
+                        <span class="material-symbols-outlined check-icon">check_circle</span>
+                        <span>Fixed income research writing and credit pitchbook frameworks.</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="track-career">
+                    <h4>CAREER IMPACT</h4>
+                    <div class="track-career-box">
+                      <p class="track-quote">"Essential for candidates targeting bond desks, credit rating agencies, or
+                        debt funds."</p>
+                      <div class="track-tags">
+                        <span class="track-tag">Credit Analyst</span>
+                        <span class="track-tag">Debt Capital Markets</span>
+                        <span class="track-tag">Fixed Income Strategy</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Investment Banking Content -->
+              <div class="track-pane hidden" id="banking-content">
+                <div class="track-pane-header">
+                  <span class="track-badge">Core Path</span>
+                  <span style="color: var(--border);">|</span>
+                  <span class="track-duration">Intensive Bootcamp</span>
+                </div>
+                <h3>Investment Banking</h3>
+
+                <div class="track-pane-split">
+                  <div class="track-highlights">
+                    <h4>CURRICULUM HIGHLIGHTS</h4>
+                    <ul class="track-highlights-list">
+                      <li>
+                        <span class="material-symbols-outlined check-icon">check_circle</span>
+                        <span>Transaction modeling: Merger models and Accretion/Dilution analysis.</span>
+                      </li>
+                      <li>
+                        <span class="material-symbols-outlined check-icon">check_circle</span>
+                        <span>Building Information Memorandums (IMs) and Pitchbooks from scratch.</span>
+                      </li>
+                      <li>
+                        <span class="material-symbols-outlined check-icon">check_circle</span>
+                        <span>Valuation frameworks: comparable companies, precedent transactions, and DCF.</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="track-career">
+                    <h4>CAREER IMPACT</h4>
+                    <div class="track-career-box">
+                      <p class="track-quote">"Targets analyst/associate placements at bulge bracket and boutique
+                        investment banks."</p>
+                      <div class="track-tags">
+                        <span class="track-tag">M&amp;A Associate</span>
+                        <span class="track-tag">Investment Banking Analyst</span>
+                        <span class="track-tag">Corporate Development</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Private Equity Content -->
+              <div class="track-pane hidden" id="pe-content">
+                <div class="track-pane-header">
+                  <span class="track-badge">Premium Path</span>
+                  <span style="color: var(--border);">|</span>
+                  <span class="track-duration">Advanced Track</span>
+                </div>
+                <h3>Private Equity</h3>
+
+                <div class="track-pane-split">
+                  <div class="track-highlights">
+                    <h4>CURRICULUM HIGHLIGHTS</h4>
+                    <ul class="track-highlights-list">
+                      <li>
+                        <span class="material-symbols-outlined check-icon">check_circle</span>
+                        <span>LBO modeling from entry to exit with detailed sensitivity analysis.</span>
+                      </li>
+                      <li>
+                        <span class="material-symbols-outlined check-icon">check_circle</span>
+                        <span>Investment thesis development and investment committee memo presentation.</span>
+                      </li>
+                      <li>
+                        <span class="material-symbols-outlined check-icon">check_circle</span>
+                        <span>Commercial, financial, and legal due diligence frameworks.</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="track-career">
+                    <h4>CAREER IMPACT</h4>
+                    <div class="track-career-box">
+                      <p class="track-quote">"Designed for lateral moves or post-MBA entry into private markets."</p>
+                      <div class="track-tags">
+                        <span class="track-tag">Private Equity Associate</span>
+                        <span class="track-tag">Venture Capital</span>
+                        <span class="track-tag">LBO Specialist</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mentorship Program Content -->
+              <div class="track-pane hidden" id="mentorship-content">
+                <div class="track-pane-header">
+                  <span class="track-badge">Personalized Path</span>
+                  <span style="color: var(--border);">|</span>
+                  <span class="track-duration">Flexible Schedule</span>
+                </div>
+                <h3>Personalized Mentorship Program</h3>
+
+                <div class="track-pane-split">
+                  <div class="track-highlights">
+                    <h4>CURRICULUM HIGHLIGHTS</h4>
+                    <ul class="track-highlights-list">
+                      <li>
+                        <span class="material-symbols-outlined check-icon">check_circle</span>
+                        <span>1-on-1 sessions with seasoned professionals from top-tier firms.</span>
+                      </li>
+                      <li>
+                        <span class="material-symbols-outlined check-icon">check_circle</span>
+                        <span>Bespoke resume restructuring and LinkedIn optimization.</span>
+                      </li>
+                      <li>
+                        <span class="material-symbols-outlined check-icon">check_circle</span>
+                        <span>Rigorous mock interview runs and industry networking guidance.</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="track-career">
+                    <h4>CAREER IMPACT</h4>
+                    <div class="track-career-box">
+                      <p class="track-quote">"Accelerates recruitment cycles, helping candidates secure competitive
+                        finance and advisory offers."</p>
+                      <div class="track-tags">
+                        <span class="track-tag">Interview Prep</span>
+                        <span class="track-tag">Resume Branding</span>
+                        <span class="track-tag">Career Advisory</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Footer -->
+            <div class="track-footer">
+              <p>Detailed brochures and sample modules are available upon verification of academic or professional
+                credentials.</p>
+              <button class="btn-primary">ENROLL IN TRACK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VALUE PROPS ================= -->
+
+    <section class="experience-section">
+      <div class="container">
+        <div class="experience-grid">
+          <div class="experience-left">
+            <h2>Built around industry experience.</h2>
+            <div class="decor-bar"></div>
+          </div>
+
+          <div class="experience-right">
+            <div class="experience-item">
+              <div class="experience-icon">
+                <span class="material-symbols-outlined">groups</span>
+              </div>
+              <div class="experience-text">
+                <h3>Experienced Professionals</h3>
+                <p>Our programs are designed and delivered by experienced professionals with exposure across investment
+                  research, banking, private markets, and finance-related functions.</p>
+              </div>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-icon">
+                <span class="material-symbols-outlined">devices</span>
+              </div>
+              <div class="experience-text">
+                <h3>Online/Offline Hybrid</h3>
+                <p>Sessions may be conducted in online, offline, or hybrid formats depending on participant
+                  requirements, engagement structure, and learning objectives.</p>
+              </div>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-icon">
+                <span class="material-symbols-outlined">edit_note</span>
+              </div>
+              <div class="experience-text">
+                <h3>Customizable Content</h3>
+                <p>Content, duration, structure, and delivery models can be customized for individuals, academic
+                  institutions, finance clubs, and corporate teams.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CORPORATE & LEAD CAPTURE ================= -->
+
+    <section class="corporate-section">
+      <div class="container">
+        <div class="corporate-split-grid">
+          <!-- Corporate Left Content -->
+          <div class="corporate-left">
+            <h2>Custom Corporate Training</h2>
+            <p>We partner with global institutions to deliver bespoke learning paths that align with specific analyst
+              programs and internal deal workflows.</p>
+
+            <ul class="corporate-checklist">
+              <li>
+                <span class="material-symbols-outlined check-icon">check_circle</span>
+                <span>Fully Customizable Content Libraries</span>
+              </li>
+              <li>
+                <span class="material-symbols-outlined check-icon">check_circle</span>
+                <span>Advanced LBO &amp; M&amp;A Modeling Simulations</span>
+              </li>
+              <li>
+                <span class="material-symbols-outlined check-icon">check_circle</span>
+                <span>On-site Delivery by Former Bulge Bracket MDs</span>
+              </li>
+              <li>
+                <span class="material-symbols-outlined check-icon">check_circle</span>
+                <span>Sector-Specific Deep-Dives (TMT, Healthcare, Energy)</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Form Card Right -->
+          <div class="form-card">
+            <div class="absolute-decor"
+              style="position: absolute; top: 0; right: 0; width: 128px; height: 128px; background: rgba(0, 109, 119, 0.05); border-radius: 50%; transform: translate(40px, -40px); z-index: 1;">
+            </div>
+            <div style="position: relative; z-index: 2;">
+              <h3>Interested in learning more?</h3>
+              <p class="form-subhead">Share your details and our team will connect with you with additional information
+                about the programs.</p>
+
+              <form class="lead-form"
+                onsubmit="event.preventDefault(); alert('Information request received. Thank you!');">
+                <div class="form-group">
+                  <label for="fullName">Full Name</label>
+                  <input type="text" id="fullName" class="form-input" placeholder="John Doe" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="emailAddr">Email Address</label>
+                  <input type="email" id="emailAddr" class="form-input" placeholder="john@institution.com" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="mobNum">Mobile Number</label>
+                  <input type="tel" id="mobNum" class="form-input" placeholder="+1 (555) 000-0000" />
+                </div>
+
+                <button type="submit" class="btn-primary">REQUEST INFORMATION &rarr;</button>
+
+                <div class="form-privacy">
+                  <span class="material-symbols-outlined lock-icon">lock</span>
+                  <span>We respect your privacy.</span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta-section" id="contact">
+      <div class="container">
+        <div class="cta-banner-dark">
+          <div class="cta-content-left">
+            <h2>
+              Learn from experienced professionals.
+              <br />
+              Build skills that shape your future.
+            </h2>
+            <p>Practical. Relevant. Impactful.</p>
+          </div>
+
+          <div class="cta-content-right">
+            <button class="btn-primary">CONNECT WITH US &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">XYZ</div>
+
+        <div class="footer-links">
+          <a href="ventures.html">Ventures</a>
+          <a href="learnings.html">Learnings</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn">
+            <svg class="social-svg-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="X">
+            <svg class="social-svg-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="Email">
+            <svg class="social-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">&copy; 2024 XYZ. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

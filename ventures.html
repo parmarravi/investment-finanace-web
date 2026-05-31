@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XYZ Ventures — Building alongside founders</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function() {
+      const currentTheme = localStorage.getItem("theme");
+      if (currentTheme) {
+        document.documentElement.setAttribute("data-theme", currentTheme);
+      } else {
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute("data-theme", prefersDark ? "dark" : "light");
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- ================= HEADER ================= -->
+
+  <header class="header">
+    <div class="container">
+      <div class="navbar">
+        <a href="index.html" class="logo"> XYZ </a>
+
+        <nav class="nav-links" id="navMenu">
+          <a href="ventures.html" class="active">Ventures</a>
+          <a href="learnings.html">Learnings</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark/Light Mode">
+            <span class="material-symbols-outlined theme-toggle-icon">dark_mode</span>
+          </button>
+
+          <button class="btn-primary">Connect With Us &rarr;</button>
+
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">☰</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-ventures">
+        <div class="hero-content">
+          <span class="eyebrow"> VENTURES </span>
+
+          <h1>
+            Building alongside
+            <br />
+            <span class="highlight">founders.</span>
+          </h1>
+
+          <p>
+            We connect with founders, innovators, and early-stage businesses exploring opportunities across technology,
+            content, education, and digital-first ecosystems.
+          </p>
+          <p style="margin-top: 12px;">
+            Our focus is on long-term thinking, meaningful relationships, and exploring ideas with scalable potential.
+          </p>
+
+          <!-- Quick Info Card/Row -->
+          <div class="hero-info-row">
+            <div class="hero-info-item">
+              <div class="hero-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div class="hero-info-text">
+                <span class="hero-info-label">Email</span>
+                <span class="hero-info-val">hello@xyz.com</span>
+              </div>
+            </div>
+
+            <div class="hero-info-item">
+              <div class="hero-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div class="hero-info-text">
+                <span class="hero-info-label">Based In</span>
+                <span class="hero-info-val">Mumbai, India</span>
+              </div>
+            </div>
+
+            <div class="hero-info-item">
+              <div class="hero-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </div>
+              <div class="hero-info-text">
+                <span class="hero-info-label">Availability</span>
+                <span class="hero-info-val">Open to New Ventures.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="hero-image-inner">
+            <img src="assets/images/ventures-hero.png" alt="XYZ Ventures Workspace" />
+          </div>
+          <!-- Floating Portfolio Growth Card -->
+          <div class="floating-portfolio-card">
+            <span class="floating-portfolio-title">Portfolio Growth</span>
+            <div class="floating-chart">
+              <div class="floating-chart-bar"></div>
+              <div class="floating-chart-bar"></div>
+              <div class="floating-chart-bar"></div>
+              <div class="floating-chart-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= OUR APPROACH ================= -->
+
+  <section class="ventures-approach" id="our-approach">
+    <div class="container">
+      <div class="split-grid-2col">
+        <div class="split-left-content">
+          <span class="eyebrow"> OUR APPROACH </span>
+          <h2>Built around long-term thinking.</h2>
+          <p>
+            We believe meaningful companies are built through patience, strong partnerships, practical execution, and
+            continuous learning.
+          </p>
+          <p>
+            Our focus is on understanding ideas, supporting ambitious builders, and exploring opportunities where we can
+            contribute meaningfully over time.
+          </p>
+        </div>
+
+        <div class="grid-cards-2x2">
+          <!-- Card 1 -->
+          <div class="approach-card">
+            <div class="card-icon">
+              <span class="material-symbols-outlined">person</span>
+            </div>
+            <h4>Founder Focused</h4>
+            <p>We value strong founders, thoughtful execution, and long-term vision.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="approach-card">
+            <div class="card-icon">
+              <span class="material-symbols-outlined">rocket_launch</span>
+            </div>
+            <h4>Early-Stage Oriented</h4>
+            <p>Interested in exploring opportunities at an early stage where ideas and partnerships matter most.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="approach-card">
+            <div class="card-icon">
+              <span class="material-symbols-outlined">insights</span>
+            </div>
+            <h4>Strategic Perspective</h4>
+            <p>We bring research orientation, ecosystem exposure, and practical thinking to conversations and
+              collaborations.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="approach-card">
+            <div class="card-icon">
+              <span class="material-symbols-outlined">handshake</span>
+            </div>
+            <h4>Relationship Driven</h4>
+            <p>We believe long-term relationships create stronger ecosystems and better outcomes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= AREAS WE ARE EXPLORING ================= -->
+
+  <section class="areas-section" id="focus-areas">
+    <div class="decorative-blur"></div>
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="section-header-centered">
+        <span class="eyebrow"> AREAS WE ARE EXPLORING </span>
+        <h2>Themes and opportunities we are exploring.</h2>
+      </div>
+
+      <div class="areas-grid">
+        <!-- Card 1 -->
+        <div class="area-card">
+          <div class="card-icon">
+            <span class="material-symbols-outlined">memory</span>
+          </div>
+          <h4>Technology & AI</h4>
+          <p>Technology-enabled businesses leveraging AI, automation, and digital infrastructure to solve meaningful
+            real-world problems.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="area-card">
+          <div class="card-icon">
+            <span class="material-symbols-outlined">movie</span>
+          </div>
+          <h4>Content & Media</h4>
+          <p>Digital content platforms, creator-led ecosystems, and audience-driven businesses shaping modern
+            information and engagement.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="area-card">
+          <div class="card-icon">
+            <span class="material-symbols-outlined">school</span>
+          </div>
+          <h4>Education & Learning</h4>
+          <p>Professional learning platforms, skill development ecosystems, and industry-led education models focused on
+            practical outcomes.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="area-card">
+          <div class="card-icon">
+            <span class="material-symbols-outlined">devices</span>
+          </div>
+          <h4>Digital-First Businesses</h4>
+          <p>Businesses built around digital distribution, scalable operations, technology-enabled growth, and evolving
+            consumer behavior.</p>
+        </div>
+
+        <!-- Callout -->
+        <div class="callout-box">
+          <div class="callout-icon">
+            <span class="material-symbols-outlined">chat</span>
+          </div>
+          <div class="callout-text">
+            <h5>Building something interesting?</h5>
+            <p>Even if your idea falls outside our current areas of exploration, do not hesitate to reach out. We are
+              always open to thoughtful conversations, emerging ideas, and meaningful collaborations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HOW WE COLLABORATE ================= -->
+
+  <section class="collaborate-section" id="how-we-work">
+    <div class="container">
+      <div class="collaborate-split-grid">
+        <!-- Left Side: Header & Lists -->
+        <div class="collaborate-left">
+          <span class="eyebrow"> HOW WE COLLABORATE </span>
+          <h2>Transparent and purposeful partnership.</h2>
+
+          <div class="collaborate-list">
+            <!-- Item 1 -->
+            <div class="collaborate-list-item">
+              <div class="list-item-icon-wrapper">
+                <span class="material-symbols-outlined list-item-icon" data-icon="forum">forum</span>
+              </div>
+              <div class="list-item-content">
+                <h4>Strategic Conversations</h4>
+                <p>Founder discussions focused on high-level strategy, idea evaluation, and strategic ecosystem introductions.</p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="collaborate-list-item">
+              <div class="list-item-icon-wrapper">
+                <span class="material-symbols-outlined list-item-icon" data-icon="lightbulb">lightbulb</span>
+              </div>
+              <div class="list-item-content">
+                <h4>Guidance &amp; Perspective</h4>
+                <p>Sharing practical insights, industry exposure, and strategic thinking derived from our broad market visibility.</p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="collaborate-list-item">
+              <div class="list-item-icon-wrapper">
+                <span class="material-symbols-outlined list-item-icon" data-icon="groups">groups</span>
+              </div>
+              <div class="list-item-content">
+                <h4>Long-Term Partnerships</h4>
+                <p>Exploring meaningful relationships built around shared growth, trust, and aligned long-term thinking.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Status/Opportunities Card -->
+        <div class="collaborate-right">
+          <div class="status-card">
+            <div class="status-card-header">
+              <span class="material-symbols-outlined status-icon" data-icon="search">search</span>
+              <span class="status-eyebrow">Currently Exploring Opportunities</span>
+            </div>
+
+            <blockquote class="status-quote">
+              "We are actively building relationships, exploring ideas, and evaluating opportunities aligned with our
+              long-term interests and ecosystem approach."
+            </blockquote>
+
+            <div class="status-card-footer">
+              <div class="status-meta">
+                <span class="status-meta-label">Active Status</span>
+                <span class="status-meta-value">Elite Access</span>
+              </div>
+              <div class="status-chart">
+                <div class="status-chart-bar" style="height: 12px;"></div>
+                <div class="status-chart-bar" style="height: 24px;"></div>
+                <div class="status-chart-bar" style="height: 36px;"></div>
+                <div class="status-chart-bar" style="height: 48px;"></div>
+                <div class="status-chart-bar" style="height: 40px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-banner-dark">
+        <div class="cta-content-left">
+          <h2>
+            Building relationships
+            <br />
+            with ambitious founders.
+          </h2>
+
+          <p>If you are building something meaningful and would like to connect, we would be glad to hear from you.</p>
+        </div>
+
+        <div class="cta-content-right">
+          <button class="btn-primary">Connect With Us &rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">XYZ</div>
+
+        <div class="footer-links">
+          <a href="ventures.html">Ventures</a>
+          <a href="learnings.html">Learnings</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn">
+            <svg class="social-svg-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="X">
+            <svg class="social-svg-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="Email">
+            <svg class="social-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">&copy; 2024 XYZ. All rights reserved.</div>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
